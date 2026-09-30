@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl scroll-mt-24 px-4 sm:px-6 lg:px-8;
+    background-color: var(--color-section);
+  }
+}
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --color-background: #111318;
+  --color-secondary: #171a22;
+  --color-card: #1c202b;
+  --color-navbar: #15171d;
+  --color-section: #14171e;
+  --color-card-hover: #242a38;
+  --color-border: #303644;
+  --color-terminal: #171821;
+  --color-terminal-header: #20212c;
+  --color-accent: #9b6dff;
+  --color-accent-blue: #5b8cff;
+  --color-accent-green: #4fd1b5;
+  --color-text-primary: #f5f7fa;
+  --color-text-secondary: #c0c7d4;
+  --color-text-muted: #9aa5b5;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  background: var(--color-background);
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--color-background);
+}
+
+button,
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+::selection {
+  color: #f5f7fa;
+  background: rgb(155 109 255 / 30%);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid var(--color-background);
+  border-radius: 999px;
+  background: #454b59;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #626b7c;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+#home {
+  background: linear-gradient(135deg, #111318 0%, #151923 100%);
+}
+
+.bg-panel:hover {
+  background-color: var(--color-card-hover);
+}
+
+@media (hover: hover) {
+  .section-shell article:hover {
+    background-color: var(--color-card-hover);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
