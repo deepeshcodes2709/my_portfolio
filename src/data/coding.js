@@ -22,9 +22,4 @@ export const codingPlatforms = [
     username: 'm5vfTuqICE',
     url: 'https://leetcode.com/u/m5vfTuqICE/',
   },
-  {
-    name: 'Codeforces',
-    username: 'deepesh2709',
-    url: 'https://codeforces.com/profile/deepesh2709',
-  },
 ];
