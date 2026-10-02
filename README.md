@@ -1,4 +1,4 @@
-# Deepesh Jangid — Developer Portfolio
+# Deepesh Jangid — Portfolio
 
 <div align="center">
 
